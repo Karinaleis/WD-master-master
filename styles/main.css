@@ -26,6 +26,7 @@ a {
 
 h1 {
   font-size: 48px;
+  line-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -112,6 +113,68 @@ h1, h2, h3, h4, h5, h6 {
 
 .first {
   background-color: #EEEFF1;
+  padding: 77px 0 146px;
+}
+.first .wrapper {
+  display: flex;
+}
+.first__image, .first__description {
+  flex: 1 1 50%;
+}
+.first__image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.first__image-wrapper {
+  width: 100%;
+}
+.first__image-wrapper img {
+  max-width: 357px;
+  width: 100%;
+}
+.first__description {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 60px;
+}
+
+@media (max-width: 768px) {
+  .first {
+    padding: 30px 0 60px;
+  }
+  .first .wrapper {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .first__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+.button {
+  height: 55px;
+  padding: 0 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #34547A;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: #28486F;
 }
 
 .footer {
